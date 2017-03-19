@@ -11,6 +11,6 @@ type Job struct{
 }
 
 //构造Job
-func New(content string) *Job {
-	return &Job{id:rand.Intn(32),content:""}
+func NewJob(content string) *Job {
+	return &Job{id:rand.Intn(32),content:content}
 }
